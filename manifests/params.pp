@@ -249,8 +249,11 @@ class rkhunter::params {
 #      '/tmp /var/tmp',
   ]
   $port_whitelist = [
-#      '/home/user1/abc /opt/xyz TCP:2001 UDP:32011',
+#      'TCP:2001 UDP:32011',
   ]
+  $port_whitelist = [
+#      '/home/user1/abc /opt/xyz',
+]
   $shared_lib_whitelist = [
 #      '/lib/snoopy.so',
   ]
