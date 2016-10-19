@@ -125,6 +125,7 @@ NOTE: there may be more. I do not update this list every time. Have a look into 
   app_whitelist
   suspscan_dirs
   port_whitelist
+  port_path_whitelist
   shared_lib_whitelist
 ```
 
