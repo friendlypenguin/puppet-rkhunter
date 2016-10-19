@@ -840,6 +840,20 @@ SUSPSCAN_THRESH=<%= @suspscan_thresh %>
 PORT_WHITELIST=<%= port %>
 <% end -%>
 
+# Since rkhunter version 1.4.2 theres a separation between specifing
+# pathname and portnumber. See releasenotes of rkhunter:
+# http://rkhunter.cvs.sourceforge.net/viewvc/rkhunter/rkhunter/files/CHANGELOG
+# - Added the PORT_PATH_WHITELIST configuration option to be used when
+#  specifying a pathname. Other port whitelisting types use the
+#  PORT_WHITELIST option as before.
+# -The PORT_WHITELIST configuration option can now only be used to
+#  specify protocol:port pairs or the '*' option. To specify pathnames,
+#  the new PORT_PATH_WHITELIST option must be used.
+
+<% @port_path_whitelist.each do |port| -%>
+PORT_PATH_WHITELIST=<%= port %>
+<% end -%>
+
 #
 # The following option can be used to tell rkhunter where the operating
 # system 'release' file is located. This file contains information
