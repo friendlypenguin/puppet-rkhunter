@@ -71,6 +71,7 @@ class rkhunter  (
   $app_whitelist          = $rkhunter::params::app_whitelist,
   $suspscan_dirs          = $rkhunter::params::suspscan_dirs,
   $port_whitelist         = $rkhunter::params::port_whitelist,
+  $port_path_whitelist    = $rkhunter::params::port_path_whitelist,
   $shared_lib_whitelist   = $rkhunter::params::shared_lib_whitelist,
 
 ) inherits ::rkhunter::params {
