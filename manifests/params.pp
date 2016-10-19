@@ -251,7 +251,7 @@ class rkhunter::params {
   $port_whitelist = [
 #      'TCP:2001 UDP:32011',
   ]
-  $port_whitelist = [
+  $port_path_whitelist = [
 #      '/home/user1/abc /opt/xyz',
 ]
   $shared_lib_whitelist = [
